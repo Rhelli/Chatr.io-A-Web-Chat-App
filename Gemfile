@@ -61,3 +61,6 @@ gem 'bootstrap'
 
 # jQuery for Bootstrap dependencies
 gem 'jquery-rails'
+
+# Simple_Form for generating forms
+gem 'simple_form'
