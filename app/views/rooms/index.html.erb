@@ -1,1 +1,31 @@
-<h1>Rooms Index</h1>
+<div class="row">
+  <div class="col-12 col-md-3">
+    <div class="mb-3">
+      <%= link_to new_room_path, class: "btn btn-primary" do %>
+        Create a new room
+      <% end %>
+    </div>
+
+    <% if @rooms.present? %>
+      <nav class="nav flex-column">
+        <% @rooms.each do |room| %>
+          <%= link_to room.name, room_path(room), class: "nav-link room-nav-link" %>
+        <% end %>
+      </nav>
+    <% else %>
+      <div class="text-muted">
+        No rooms currently exist. Why not create one?
+      </div>
+    <% end %>
+  </div>
+
+  <div class="col">
+    <div class="alert alert-primary">
+      <h4 class="alert-heading">Welcome to Chat.io!</h4>
+      <p>An internet chat relay like the old days!</p>
+      <hr />
+      <p>Create or join a chat room from the sidebar</p>
+    </div>
+  </div>
+
+</div>
