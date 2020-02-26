@@ -62,3 +62,6 @@ gem 'jquery-rails'
 
 # Simple_Form for generating forms
 gem 'simple_form'
+
+# Redis for Caching
+gem 'redis'
